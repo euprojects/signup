@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Newsletter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Форма підписки -->
+        <div class="subscription-form" id="subscriptionForm">
+            <div class="form-header">
+                <img src="assets/philip-oroni-7rMD7zh5SKo-unsplash.jpg" alt="Email banner" class="email-banner">
+                <div class="icon-wrapper">
+                </div>
+            </div>
+            
+            <div class="form-content">
+                <h1 class="form-title">Subscribe to our Newsletter</h1>
+                <p class="form-description">Join thousands getting emails in their inbox.</p>
+                
+                <form id="emailForm" class="email-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="email" 
+                            id="emailInput" 
+                            class="email-input" 
+                            placeholder="email@example.com"
+                            autocomplete="email"
+                        >
+                        <p class="error-message" id="errorMessage">Please enter the valid email</p>
+                    </div>
+                    
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success Dialog -->
+        <dialog id="successDialog" class="success-dialog">
+            <div class="dialog-content">
+                <div class="success-icon-wrapper">
+                    <img src="assets/icon.png" alt="Success icon" class="success-icon">
+                </div>
+                <p class="success-message">
+                    Your subscription has been placed for your <span id="userEmail"></span>!
+                </p>
+                <button type="button" class="thanks-button" id="thanksButton">Thanks!</button>
+            </div>
+        </dialog>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
